@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Overview
 
-## Getting Started
+## Project Links
 
-First, run the development server:
+- [GitHub Repository Frontend](https://github.com/joezucco/ss-ceramics)
+- [Live Site link Frontend]()
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Sarach Schwartz Ceramics is an online portfolio and rudimentary storefront for my client, Sarah, to showcase her work and direct users to purchase it via Etsy. When completed, Sarah will be able to update her own site without the need for a developer via Contenful's CMS.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## API
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+API + database are handled in Contentful.
 
-## Learn More
+## Wireframes
 
-To learn more about Next.js, take a look at the following resources:
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Wireframe & Design Assets](https://www.notion.so/Design-Assets-913b48ff2f584a51af8c57d563816266)
+- [Notion](https://www.notion.so/UNIT-4-CAPSTONE-72e2936723d74421b47d270476cb6e65)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### MVP/PostMVP 
 
-## Deploy on Vercel
+#### MVP 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Learn Next.js + Contentful
+- Get site up and running successfully with Next and headless CMS API for bare minimum use as a portfolio with links to Etsy pages
+- 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### PostMVP 
+
+- Style with Tailwind CSS or similar CSS framework
+- If client decides on full ecommerce functionality or project is ahead of schedule, refactor with Shopify
+- 
+
+## Components
+
+**TO BE FILLED IN AT LATER DATE**
+
+| Component |                          Description                          |
+| --------- | :-----------------------------------------------------------: |
+| index.js  | This component will make initial API call                     |
+| Email Form|                                                               |
+| About Page|                                                               |
+| Layout    |                                                               |
+|           |                                                               |
+|           |                                                               |
+|           |                                                               |
+|           |                                                               |
+
+
+## Time Priority Matrix
+
+| Component        | Priority | Estimated Time | Time Invetsted | Actual Time |
+| ---------------- | :------: | :------------: | :------------: | :---------: |
+| Project Planning |    H     |      6hrs      |     hrs        |     6hrs    |
+| Learn Next.js    |    H     |      6hr       |     12hrs      |      12hrs  |
+| Work with Contenful | H     |      3hrs      |     6hrs       |      hrs    |
+| Styling          |          |      10hrs     |     hrs        |      hrs    |
+|                  |          |                |     hrs        |      hrs    |
+|                  |          |                |     hrs        |      hrs    |
+|                  |          |                |     hrs        |      hrs    |
+|                  |          |                |     hrs        |      hrs    |
+|                  |          |                |     hrs        |             |
+|                  |          |                |     hrs        |   hrs       |
+|                  |          |                |     hrs        |   hrs       | 
+|                  |          |                |     hrs        |   hrs       |
+|                  |          |                |     hrs        |     hrs     |
+|                  |          |                |     hrs        |    hrs      |
+| Total            |          |      60hrs     |     hrs        |    hrs      |
+
+
+
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description. Code snippet should not be greater than 10 lines of code.
+
