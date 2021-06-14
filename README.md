@@ -55,12 +55,12 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 | Component        | Priority | Estimated Time | Time Invetsted | Actual Time |
 | ---------------- | :------: | :------------: | :------------: | :---------: |
-| Project Planning |    H     |      6hrs      |     hrs        |     6hrs    |
+| Project Planning |    H     |      6hrs      |     6hrs       |     6hrs    |
 | Learn Next.js    |    H     |      6hr       |     12hrs      |      12hrs  |
 | Work with Contenful | H     |      3hrs      |     6hrs       |      hrs    |
-| Styling          |          |      10hrs     |     hrs        |      hrs    |
-|                  |          |                |     hrs        |      hrs    |
-|                  |          |                |     hrs        |      hrs    |
+| Styling          |    H     |      10hrs     |     hrs        |      hrs    |
+| API call         |    H     |      2hrs      |     hrs        |      hrs    |
+| Routing          |    H     |      3hrs      |     hrs        |      hrs    |
 |                  |          |                |     hrs        |      hrs    |
 |                  |          |                |     hrs        |      hrs    |
 |                  |          |                |     hrs        |             |
