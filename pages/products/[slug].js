@@ -57,10 +57,14 @@ export default function SingleProduct({ product }) {
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}
         />
-            <h2>{title}</h2>
-            <p>${price}</p>
-            <p>{documentToReactComponents(description)}</p>
-            <a href={purchase}>Purchase</a>
+        <h2>{title}</h2>
+        <p>${price}</p>
+        <p>{documentToReactComponents(description)}</p>
+            <a href={purchase}>
+          <button type="submit" value="Purchase">
+            {purchase}
+          </button>
+        </a>
       </div>
     );
 }
