@@ -1,10 +1,35 @@
+import { createClient } from "contentful";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Image from "next/image";
 
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
 
-export default function about() {
-    return (
-        <div>
-            <h3>This is about</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima harum accusamus doloremque exercitationem vel reiciendis eius impedit laborum? Aliquam tempore eius dignissimos corporis, dolores vitae cum nulla est nisi molestias!</p>
-        </div>
-    )
+  const res = await client.getEntries({ content_type: "about" });
+
+  return {
+    props: {
+      info: res.items,
+    },
+    revalidate: 1,
+  };
+}
+
+export default function About({ info }) {
+  console.log(info);
+
+    const {aboutImage, bio } = info[0].fields;
+  return (
+    <div>
+      <Image
+        src={"https:" + aboutImage.fields.file.url}
+        width={aboutImage.fields.file.details.image.width}
+        height={aboutImage.fields.file.details.image.height}
+      />
+      <p>{documentToReactComponents(bio)}</p>
+    </div>
+  );
 }
