@@ -1,9 +1,8 @@
-import Link from 'next/link'
-import { createClient } from 'contentful'
-import ProductCard from '../../components/ProductCard'
+import Link from "next/link";
+import { createClient } from "contentful";
+import ProductCard from "../../components/ProductCard";
 
 export async function getStaticProps() {
-    
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
@@ -20,16 +19,16 @@ export async function getStaticProps() {
 }
 
 export default function Products({ products }) {
-    console.log(products)
+  console.log(products);
 
-    return (
-        <div>
-            <h1>Products page</h1>
-            <div className="product-list">
-                {products.map(product => (
-                    <ProductCard key={product.sys.id} product={product} />
-                ))}
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Products page</h1>
+      <div className="product-list">
+        {products.map((product) => (
+          <ProductCard key={product.sys.id} product={product} />
+        ))}
+          </div>
+    </div>
+  );
 }
