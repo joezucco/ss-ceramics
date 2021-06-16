@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@300;400;500&display=swap");
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Raleway', sans-serif;
   background: #FFF;
+    max-width: 1200px;
+  margin: 0 auto;
 }
 
 a {
@@ -13,7 +15,3 @@ a {
   }
 }
 
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
