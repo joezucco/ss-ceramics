@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import Head from 'next/head'
 import { createClient } from "contentful";
-import image from "next/image";
 
   export async function getStaticProps() {
     const client = createClient({
@@ -30,12 +29,13 @@ export default function Home({images}) {
         <title>Sarah Schwartz Ceramics</title>
         <meta name="keywords" content="ceramics" />
       </Head>
-
-      {/* HERO */}
-      <div className="hero">
-        {images.map(hero => (
-          <Hero key={hero.sys.id} hero={hero}/>
-        ))}
+      <div className="flex justify-center items-center w-screen h-screen">
+        {/* HERO */}
+        <div className="hero">
+          {images.map((hero) => (
+            <Hero key={hero.sys.id} hero={hero} />
+          ))}
+        </div>
       </div>
     </>
   );

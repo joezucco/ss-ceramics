@@ -60,11 +60,12 @@ export default function SingleProduct({ product }) {
         <h2>{title}</h2>
         <p>${price}</p>
         <p>{documentToReactComponents(description)}</p>
-            <a href={purchase}>
+
+        {purchase && (
           <button type="submit" value="Purchase">
-            {purchase}
+            <a href={purchase}>Purchase</a>
           </button>
-        </a>
+        )}
       </div>
     );
 }
