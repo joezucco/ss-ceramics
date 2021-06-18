@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./styles/Navbar.module.scss";
 
-export default function Navbar() {
+export default function Navigation() {
   return (
     <div>
       <nav className={styles.nav}>
@@ -18,5 +18,7 @@ export default function Navbar() {
         </Link>
       </nav>
     </div>
+
+
   );
 }
