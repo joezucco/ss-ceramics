@@ -1,7 +1,6 @@
 import Hero from "../components/Hero";
 import Head from 'next/head'
 import { createClient } from "contentful";
-import image from "next/image";
 
   export async function getStaticProps() {
     const client = createClient({

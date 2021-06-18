@@ -1,17 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$logo-font: "Raleway";
+$primary: white;
+$font-color: black;
+$font-hover: rgb(74, 74, 74);
 
 body {
-  font-family: 'Montserrat', 'Raleway', sans-serif;
-  background: #FFF;
-    max-width: 1200px;
+  font-family: "Montserrat", "Raleway", sans-serif;
+  background: $primary;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
   color: black;
   &:hover {
-    color: gray;
+    color: $font-hover;
   }
 }
-
