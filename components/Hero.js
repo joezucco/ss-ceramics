@@ -1,7 +1,4 @@
-import styles from "../styles/Home.module.scss";
 import Image from "next/image";
-
-
 
 export default function Hero({ hero }) {
 
@@ -18,6 +15,9 @@ export default function Hero({ hero }) {
           quality={100}
           className="image"
         />
+
+        
+
       </div>
     </>
   );
