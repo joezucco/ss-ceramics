@@ -1,14 +1,14 @@
 // import '../styles/globals.scss'
-import '../styles/index.css'
-import Layout from '../components/Layout'
-import Footer from '../components/Footer'
+import "../styles/index.css";
+import Layout from "../components/Layout";
+
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout >
+    <Layout>
       <Component {...pageProps} />
     </Layout>
   );
 }
 
-export default MyApp
+export default MyApp;

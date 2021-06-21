@@ -34,7 +34,7 @@ export default function ContactForm() {
     //   </button>
     // </form>
     <div>
-      <div>
+      <div class='h-screen'>
         <form onSubmit={handleSubmit} class='font-body'>
           <div class='w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg dark:bg-gray-800'>
             <div
@@ -97,7 +97,7 @@ export default function ContactForm() {
                 <button
                   type='submit'
                   disabled={state.submitting}
-                  class='py-2 px-4  bg-black hover:bg-gray-500  text-white w-full transition ease-in duration-100 text-center text-base font-normal shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
+                  class='py-2 px-4  bg-red-500 hover:bg-gray-500  text-white w-full transition ease-in duration-100 text-center text-base font-normal shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
                 >
                   Send
                 </button>

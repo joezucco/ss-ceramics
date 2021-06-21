@@ -35,7 +35,7 @@ export default function Navigation({toggle}) {
         <Link href='/'>
           <a
             href='/'
-            className='lg:text-3xl md:text-3xl sm:text-2xl m-2 font-thin hover:text-red-300 transition ease-in-out duration-200'
+            className='lg:text-3xl md:text-3xl sm:text-1xl m-2 font-thin hover:text-red-300 transition ease-in-out duration-200'
           >
             Sarah Schwartz Ceramics
           </a>
