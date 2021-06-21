@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import Head from "next/head";
+import Footer from '../components/Footer'
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
@@ -22,7 +23,7 @@ export default function Home({ images }) {
   console.log(images);
 
   return (
-    <>
+    <div>
       {/* HEAD W METADATA */}
       <Head>
         <title>Sarah Schwartz Ceramics</title>
@@ -35,6 +36,6 @@ export default function Home({ images }) {
           <Hero key={hero.sys.id} hero={hero} />
         ))}
       </div>
-    </>
+    </div>
   );
 }

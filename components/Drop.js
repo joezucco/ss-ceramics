@@ -3,21 +3,31 @@ import Link from 'next/link'
 
 const Dropdown = ({isOpen, toggle}) => {
     return (
-        <div className={isOpen ? "grid grid-rows-4 text-center items-center bg-white-800" : "hidden"} onClick={toggle}>
-          <Link href="/products" className="p-4 hover:text-white">
+      <div
+        className={
+          isOpen
+            ? "font-logo m-1 grid grid-rows-3 text-center bg-white-800 bg-opacity-5 "
+            : "hidden"
+        }
+        onClick={toggle}
+      >
+        <Link href='/products'>
+          <a className='hover:text-gray-500 transition ease-in-out duration-200'>
             Shop
-          </Link>
-          <Link href="/products" className="p-4 hover:text-white">
+          </a>
+        </Link>
+        <Link href='/about'>
+          <a className='hover:text-gray-500 transition ease-in-out duration-200'>
             About
-          </Link>
-          <Link href="/products" className="p-4 hover:text-white">
-            About
-          </Link>
-          <Link href="/products" className="p-4 hover:text-white">
-            About
-          </Link>                    
-        </div>
-    )
+          </a>
+        </Link>
+        <Link href='/contact'>
+          <a className='hover:text-gray-500 transition ease-in-out duration-200'>
+            Contact
+          </a>
+        </Link>
+      </div>
+    );
 }
 
 export default Dropdown
