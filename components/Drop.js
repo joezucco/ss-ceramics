@@ -1,28 +1,28 @@
 import Link from 'next/link'
 
 
-const Dropdown = ({isOpen, toggle}) => {
-    return (
-      <div
-        className={
-          isOpen
-            ? "font-logo m-1 grid grid-rows-3 text-center bg-white-800 bg-opacity-5 "
-            : "hidden"
-        }
-        onClick={toggle}
+const Dropdown = ({ isOpen, toggle }) => {
+  return (
+    <div
+      className={
+        isOpen
+          ? "font-body text-lg  grid grid-rows-3 text-center bg-gradient-to-b from-geraldine-100 via-white  to-transparent w-screen"
+          : "hidden"
+      }
+      onClick={toggle}
       >
         <Link href='/products'>
-          <a className='hover:text-gray-500 transition ease-in-out duration-200'>
+          <a className='hover:text-gray-500 transition ease-in-out duration-200 m-1'>
             Shop
           </a>
         </Link>
         <Link href='/about'>
-          <a className='hover:text-gray-500 transition ease-in-out duration-200'>
+          <a className='hover:text-gray-500 transition ease-in-out duration-200 m-1'>
             About
           </a>
         </Link>
         <Link href='/contact'>
-          <a className='hover:text-gray-500 transition ease-in-out duration-200'>
+          <a className='hover:text-gray-500 transition ease-in-out duration-200 m-1'>
             Contact
           </a>
         </Link>

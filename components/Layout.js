@@ -25,13 +25,13 @@ export default function Layout({ children }) {
   });
 
   return (
-    <div class='grid grid-cols-1'>
+    <div class='grid grid-cols-1 h-full'>
       <Navbar toggle={toggle} />
-      <div class='grid grid-cols-1'>
+      <div>
         <Drop isOpen={isOpen} toggle={toggle} />
         {children}
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
