@@ -1,10 +1,7 @@
 import Link from "next/link";
 // import styles from "./styles/Navbar.module.css";
 
-export default function Navigation({toggle}) {
-
-
-
+export default function Navigation({ toggle }) {
   return (
     <>
       {/* <div>
