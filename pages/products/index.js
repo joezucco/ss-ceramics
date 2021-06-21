@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { createClient } from "contentful";
-import ProductCard from "../../components/productcard";
+import ProductCard from "../../components/ProductCard";
 
 export async function getStaticProps() {
   const client = createClient({

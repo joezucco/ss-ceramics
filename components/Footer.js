@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Navbar() {
+export default function Footer() {
     return (
       <footer>
         <p>Copyright 2021 Sarah Schwartz Ceramics</p>
