@@ -23,7 +23,7 @@ export default function About({ info }) {
 
     const {aboutImage, bio } = info[0].fields;
   return (
-    <div>
+    <div class='h-screen'>
       {aboutImage && <Image
         src={"https:" + aboutImage.fields.file.url}
         width={aboutImage.fields.file.details.image.width}

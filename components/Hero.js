@@ -7,7 +7,7 @@ export default function Hero({ hero }) {
   
   
   return (
-    <>
+  <>
       {/* <div>
         <Image
           src={"https:" + mainImage.fields.file.url}
@@ -18,8 +18,8 @@ export default function Hero({ hero }) {
           className='image'
         />
       </div> */}
-
-      <section class='mx-auto container pt-12'>
+    <div >
+      <section class='mx-auto container pt-10 -m min-h-screen'>
         <div class='flex flex-col sm:flex-col md:flex-row lg:flex-row'>
           <div class='flex flex-col lg:w-5/12 md:w-6/12 px-4 lg:pr-3 justify-center md:mb-0 lg:mb-24 md:pt-0 lg:pt-24'>
             {/* <h1 class='text-5xl sm:text-6xl font-body leading-none text-pink-400 tracking-wide'>
@@ -44,6 +44,7 @@ export default function Hero({ hero }) {
           </div>
         </div>
       </section>
-    </>
+      </div>
+      </>
   );
 }

@@ -97,7 +97,7 @@ export default function ContactForm() {
                 <button
                   type='submit'
                   disabled={state.submitting}
-                  class='py-2 px-4  bg-red-500 hover:bg-gray-500  text-white w-full transition ease-in duration-100 text-center text-base font-normal shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
+                  class='py-2 px-4  bg-black hover:bg-gray-500  text-white w-full transition ease-in duration-100 text-center text-base font-normal shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
                 >
                   Send
                 </button>

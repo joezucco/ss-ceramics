@@ -23,7 +23,7 @@ export default function Home({ images }) {
   console.log(images);
 
   return (
-    <div class='flex flex-col'>
+    <div>
       {/* HEAD W METADATA */}
       <Head>
         <title>Sarah Schwartz Ceramics</title>

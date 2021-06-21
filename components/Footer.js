@@ -13,8 +13,8 @@ export default function Footer() {
     //   </Link>
     // </footer>
 
-    <footer class='bg-white dark:bg-gray-800 inset-x-0 bottom-0 fix'>
-      <div class='max-w-screen-xl mx-auto px-4'>
+    <footer class='bg-white dark:bg-gray-800 w-full py-8 '>
+      <div class='max-w-screen-xl mx-auto px-4 '>
         <ul class='max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-around'>
           <li class='my-2'>
             <a

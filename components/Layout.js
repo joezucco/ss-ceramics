@@ -25,7 +25,7 @@ export default function Layout({ children }) {
   });
 
   return (
-    <div class='grid grid-cols-1 h-full'>
+    <div class='flex flex-col min-h-screen'>
       <Navbar toggle={toggle} />
       <div>
         <Drop isOpen={isOpen} toggle={toggle} />
