@@ -1,4 +1,4 @@
-import Hero from "../components/Hero";
+import Hero from "../components/hero";
 import Head from 'next/head'
 import { createClient } from "contentful";
 
