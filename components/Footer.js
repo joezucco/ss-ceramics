@@ -2,15 +2,6 @@ import { FaInstagram, FaEtsy } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    // <footer class='bg-white dark:bg-gray-800 w-full py-8'>
-    //   <p>Copyright 2021 Sarah Schwartz Ceramics</p>
-    //   <a href="https://www.instagram.com/sarah.schwartz.ceramics/">
-    //     Instagram
-    //   </a>
-    //   <Link href="/contact">
-    //     <a>Get In Touch</a>
-    //   </Link>
-    // </footer>
 
     <footer class='bg-white dark:bg-gray-800 w-full py-8 '>
       <div class='max-w-screen-xl mx-auto px-4 '>
