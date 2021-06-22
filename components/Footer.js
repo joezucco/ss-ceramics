@@ -1,5 +1,4 @@
-import { FiInstagram } from 'react-icons/fi'
-import { SiEtsy } from 'react-icons/si'
+import { FaInstagram, FaEtsy } from 'react-icons/fa'
 
 export default function Footer() {
   return (
@@ -21,7 +20,7 @@ export default function Footer() {
               class='text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200'
               href='https://www.instagram.com/sarah.schwartz.ceramics/'
             >
-              <FiInstagram /> Instagram
+              <FaInstagram size={30} />
             </a>
           </li>
           <li class='my-2'>
@@ -29,7 +28,7 @@ export default function Footer() {
               class='text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200'
               href='https://www.etsy.com/shop/SarahSchwartzCeramic?ref=profile_header'
             >
-              <SiEtsy /> Etsy
+              <FaEtsy size={30} />
             </a>
           </li>
         </ul>
