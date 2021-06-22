@@ -1,7 +1,7 @@
 const { colors } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
@@ -31,14 +31,3 @@ module.exports = {
   plugins: [],
 };
 
-// module.exports = {
-//   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-//   darkMode: false,
-//   theme: {
-//     extend: {},
-//   },
-//   variants: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
