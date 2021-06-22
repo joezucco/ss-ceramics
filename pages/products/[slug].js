@@ -52,17 +52,19 @@ export default function SingleProduct({ product }) {
 
   return (
     <div class=''>
-      <div class='font-body min-h-screen flex flex-wrap justify-center  bg-gray-500'>
-        <div class='bg-red-300 p-1 flex flex-wrap'>
-          <div class='max-w-md m-6'>
-            <Image
-              src={"https:" + featuredImage.fields.file.url}
-              width={featuredImage.fields.file.details.image.width}
-              height={featuredImage.fields.file.details.image.height}
-              class='rounded '
-            />
+      <div class='font-body min-h-screen flex flex-col sm:justify-self-auto lg:justify-center bg-white'>
+        <div class='bg-white p-2 m-2 flex flex-wrap justify-center'>
+          <div class='max-w-md'>
+            
+              <Image
+                src={"https:" + featuredImage.fields.file.url}
+                width={featuredImage.fields.file.details.image.width}
+                height={featuredImage.fields.file.details.image.height}
+                class='flex flex grow'
+              />
+            
           </div>
-          <div>
+          <div class='m-2'>
             <h2 class='text-3xl mb-2'>{title}</h2>
             <p class='text-2xl font-light mb-2'>${price}</p>
             <p class='mb-2'>{documentToReactComponents(description)}</p>
