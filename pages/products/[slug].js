@@ -50,24 +50,36 @@ export default function SingleProduct({ product }) {
 
     const {featuredImage, title, price, description, purchase} = product.fields
 
-    return (
-      <div>
-        <div>
-          <Image
-            src={"https:" + featuredImage.fields.file.url}
-            width={featuredImage.fields.file.details.image.width}
-            height={featuredImage.fields.file.details.image.height}
-          />
-          <h2>{title}</h2>
-          <p>${price}</p>
-          <p>{documentToReactComponents(description)}</p>
-
-          {purchase && (
-            <button type='submit' value='Purchase'>
-              <a href={purchase}>Purchase</a>
-            </button>
-          )}
+  return (
+    <div class=''>
+      <div class='font-body min-h-screen flex flex-wrap content-center justify-around'>
+        <div class='flex sm:flex-wrap'>
+          <div class='max-w-md'>
+            <Image
+              src={"https:" + featuredImage.fields.file.url}
+              width={featuredImage.fields.file.details.image.width}
+              height={featuredImage.fields.file.details.image.height}
+              class='rounded '
+            />
+          </div>
+          <div>
+            <h2 class='text-3xl'>{title}</h2>
+            <p class='text-2xl font-light'>${price}</p>
+            <p>{documentToReactComponents(description)}</p>
+          <div>
+            {purchase && (
+              <button
+                class='bg-black hover:bg-gray-500  text-white py-2 px-4  transition ease-in duration-100 text-center text-base font-body shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
+                type='submit'
+                value='Purchase'
+              >
+                <a href={purchase}>Purchase</a>
+              </button>
+              )}
+              </div>
+          </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
