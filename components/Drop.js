@@ -6,7 +6,7 @@ const Dropdown = ({ isOpen, toggle }) => {
     <div
       className={
         isOpen
-          ? "font-body text-lg  grid grid-rows-3 text-center bg-gradient-to-b from-pink-100 via-white  to-transparent "
+          ? "font-body text-lg  grid grid-rows-3 text-center "
           : "hidden"
       }
       onClick={toggle}
@@ -14,11 +14,6 @@ const Dropdown = ({ isOpen, toggle }) => {
         <Link href='/products'>
           <a className='hover:text-gray-500 transition ease-in-out duration-200 m-1'>
             Shop
-          </a>
-        </Link>
-        <Link href='/about'>
-          <a className='hover:text-gray-500 transition ease-in-out duration-200 m-1'>
-            About
           </a>
         </Link>
         <Link href='/contact'>

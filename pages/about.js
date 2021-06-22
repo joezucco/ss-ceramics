@@ -3,12 +3,12 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from "next/image";
 
 export async function getStaticProps() {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-  });
+  // const client = createClient({
+  //   space: process.env.CONTENTFUL_SPACE_ID,
+  //   accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  // });
 
-  const res = await client.getEntries({ content_type: "about" });
+  // const res = await client.getEntries({ content_type: "about" });
 
   return {
     props: {
@@ -19,17 +19,18 @@ export async function getStaticProps() {
 }
 
 export default function About({ info }) {
-  console.log(info);
-
-    const {aboutImage, bio } = info[0].fields;
+  // const { aboutImage, bio } = info[0].fields;
   return (
-    <div class='h-screen'>
-      {aboutImage && <Image
-        src={"https:" + aboutImage.fields.file.url}
-        width={aboutImage.fields.file.details.image.width}
-        height={aboutImage.fields.file.details.image.height}
-      />}
-      <p>{documentToReactComponents(bio)}</p>
-    </div>
+    // <div class='h-screen'>
+    //   {aboutImage && (
+    //     <Image
+    //       src={"https:" + aboutImage.fields.file.url}
+    //       width={aboutImage.fields.file.details.image.width}
+    //       height={aboutImage.fields.file.details.image.height}
+    //     />
+    //   )}
+    //   <p>{documentToReactComponents(bio)}</p>
+    // </div>
+    <h1>ERROR</h1>
   );
 }
