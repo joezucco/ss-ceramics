@@ -52,20 +52,22 @@ export default function SingleProduct({ product }) {
 
     return (
       <div>
-        <Image
-          src={"https:" + featuredImage.fields.file.url}
-          width={featuredImage.fields.file.details.image.width}
-          height={featuredImage.fields.file.details.image.height}
-        />
-        <h2>{title}</h2>
-        <p>${price}</p>
-        <p>{documentToReactComponents(description)}</p>
+        <div>
+          <Image
+            src={"https:" + featuredImage.fields.file.url}
+            width={featuredImage.fields.file.details.image.width}
+            height={featuredImage.fields.file.details.image.height}
+          />
+          <h2>{title}</h2>
+          <p>${price}</p>
+          <p>{documentToReactComponents(description)}</p>
 
-        {purchase && (
-          <button type="submit" value="Purchase">
-            <a href={purchase}>Purchase</a>
-          </button>
-        )}
+          {purchase && (
+            <button type='submit' value='Purchase'>
+              <a href={purchase}>Purchase</a>
+            </button>
+          )}
+        </div>
       </div>
     );
 }
