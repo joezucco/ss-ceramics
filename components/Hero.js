@@ -2,29 +2,14 @@ import Image from "next/image";
 
 export default function Hero({ hero }) {
 
-
   const { mainImage } = hero.fields;
-  
   
   return (
   <>
-      {/* <div>
-        <Image
-          src={"https:" + mainImage.fields.file.url}
-          layout='responsive'
-          width={mainImage.fields.file.details.image.width}
-          height={mainImage.fields.file.details.image.height}
-          quality={100}
-          className='image'
-        />
-      </div> */}
     <div >
       <section class='mx-auto container pt-10 -m min-h-screen'>
         <div class='flex flex-col sm:flex-col-reverse md:flex-row lg:flex-row'>
           <div class='flex flex-col lg:w-5/12 md:w-6/12 px-4 lg:pr-3 justify-center md:mb-0 lg:mb-24 md:pt-0 lg:pt-24'>
-            {/* <h1 class='text-5xl sm:text-6xl font-body leading-none text-pink-400 tracking-wide'>
-              Picked, packed and shipped.
-            </h1> */}
             <p class='text-lg text-gray-600 font-body font-light leading-relaxed pt-8'>
               Sarah Schwartz Ceramics is a one woman pottery business based out
               of Rhode Island. All products are handmade. I am a primarily

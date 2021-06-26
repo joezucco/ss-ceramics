@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import Head from "next/head";
-import Footer from '../components/Footer'
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
@@ -20,7 +19,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ images }) {
-  console.log(images);
 
   return (
     <div>
@@ -28,6 +26,7 @@ export default function Home({ images }) {
       <Head>
         <title>Sarah Schwartz Ceramics</title>
         <meta name='keywords' content='ceramics' />
+        <link rel='shortcut icon' href='/static/favicon.ico' />
       </Head>
 
       {/* HERO */}

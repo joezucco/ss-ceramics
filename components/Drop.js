@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-
 const Dropdown = ({ isOpen, toggle }) => {
   return (
     <div
