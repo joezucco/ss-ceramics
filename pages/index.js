@@ -26,7 +26,25 @@ export default function Home({ images }) {
       <Head>
         <title>Sarah Schwartz Ceramics</title>
         <meta name='keywords' content='ceramics' />
-        <link rel='shortcut icon' href='/static/favicon.ico' />
+        <link rel='icon' href='/favicon.ico' />
+        <link
+          rel='apple-touch-icon'
+          sizes='180x180'
+          href='/public/apple-touch-icon.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='32x32'
+          href='/public/favicon-32x32.png'
+        />
+        <link
+          rel='icon'
+          type='image/png'
+          sizes='16x16'
+          href='/public/favicon-16x16.png'
+        />
+        <link rel='manifest' href='/static/site.webmanifest' />
       </Head>
 
       {/* HERO */}
