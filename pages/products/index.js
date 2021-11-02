@@ -18,7 +18,6 @@ export async function getStaticProps() {
 }
 
 export default function Products({ products }) {
-  console.log(products);
 
   return (
     <div class='min-h-screen'>
