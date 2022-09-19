@@ -34,23 +34,23 @@ export default function ContactForm() {
     //   </button>
     // </form>
     <div>
-      <div class='h-screen'>
+      <div className='h-screen'>
         <form onSubmit={handleSubmit} class='font-body'>
-          <div class='w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg dark:bg-gray-800'>
+          <div className='w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg dark:bg-gray-800'>
             <div
               htmlFor='email'
-              class='mb-6 text-3xl font-logo font-light text-center text-gray-800 dark:text-white '
+              className='mb-6 text-3xl font-logo font-light text-center text-gray-800 dark:text-white '
             >
               Get In Touch...
             </div>
-            <div class='grid max-w-xl grid-cols-2 gap-4 m-auto'>
-              <div class='col-span-2 lg:col-span-1'>
-                <div class=' relative '>
+            <div className='grid max-w-xl grid-cols-2 gap-4 m-auto'>
+              <div className='col-span-2 lg:col-span-1'>
+                <div className=' relative '>
                   <input
                     type='name'
                     id='name'
                     name='name'
-                    class='font-thin rounded border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+                    className='font-thin rounded border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
                     placeholder='Name'
                   />
                   <ValidationError
@@ -60,13 +60,13 @@ export default function ContactForm() {
                   />
                 </div>
               </div>
-              <div class='col-span-2 lg:col-span-1'>
-                <div class=' relative '>
+              <div className='col-span-2 lg:col-span-1'>
+                <div className=' relative '>
                   <input
                     type='email'
                     id='email'
                     name='email'
-                    class='font-thin rounded border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+                    className='font-thin rounded border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
                     placeholder='Email'
                   />
                   <ValidationError
@@ -76,10 +76,10 @@ export default function ContactForm() {
                   />
                 </div>
               </div>
-              <div class='col-span-2'>
-                <label class='text-gray-700' for='name'>
+              <div className='col-span-2'>
+                <label className='text-gray-700' for='name'>
                   <textarea
-                    class='font-thin flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded text-base focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+                    className='font-thin flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded text-base focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
                     id='message'
                     placeholder='Message'
                     name='message'
@@ -93,11 +93,11 @@ export default function ContactForm() {
                   />
                 </label>
               </div>
-              <div class='col-span-2 text-right'>
+              <div className='col-span-2 text-right'>
                 <button
                   type='submit'
                   disabled={state.submitting}
-                  class='py-2 px-4  bg-black hover:bg-gray-500  text-white w-full transition ease-in duration-100 text-center text-base font-normal shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
+                  className='py-2 px-4  bg-black hover:bg-gray-500  text-white w-full transition ease-in duration-100 text-center text-base font-normal shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
                 >
                   Send
                 </button>

@@ -51,21 +51,21 @@ export default function SingleProduct({ product }) {
     const {featuredImage, title, price, description, purchase} = product.fields
 
   return (
-    <div class=''>
-      <div class='font-body min-h-screen flex flex-col sm:justify-self-auto lg:justify-center bg-white'>
-        <div class='bg-white p-2 m-2 flex flex-wrap justify-center'>
-          <div class='max-w-md'>         
+    <div className=''>
+      <div className='font-body min-h-screen flex flex-col sm:justify-self-auto lg:justify-center bg-white'>
+        <div className='bg-white p-2 m-2 flex flex-wrap justify-center'>
+          <div className='max-w-md'>         
               <Image
                 src={"https:" + featuredImage.fields.file.url}
                 width={featuredImage.fields.file.details.image.width}
                 height={featuredImage.fields.file.details.image.height}
-                class='flex flex grow'
+                className='flex flex grow'
               /> 
           </div>
-          <div class='m-2'>
-            <h2 class='text-3xl mb-2'>{title}</h2>
+          <div className='m-2'>
+            <h2 className='text-3xl mb-2'>{title}</h2>
             {/* <p class='text-2xl font-light mb-2'>${price}</p> */}
-            <p class='mb-2'>{documentToReactComponents(description)}</p>
+            <p className='mb-2'>{documentToReactComponents(description)}</p>
             <div>
               {/* {purchase && (
                 <button

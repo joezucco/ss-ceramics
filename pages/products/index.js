@@ -21,8 +21,8 @@ export default function Products({ products }) {
   console.log(products);
 
   return (
-    <div class='min-h-screen'>
-      <div class='flex flex-wrap overflow-hidden justify-around'>
+    <div className='min-h-screen'>
+      <div className='flex flex-wrap overflow-hidden justify-around'>
         {products.map((product) => (
           <ProductCard key={product.sys.id} product={product} />
         ))}

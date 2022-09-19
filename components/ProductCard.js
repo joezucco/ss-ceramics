@@ -7,15 +7,15 @@ export default function ProductCard({ product }) {
 
   return (
     <Link href={"/products/" + slug} class=''>
-      <div class='bg-white m-4  overflow-hidden  font-body p-1 w-full md:w-1/3 lg:w-1/4 xl:w-1/4 hover:underline hover:opacity-90 duration-200 ease-in-out cursor-pointer'>
+      <div className='bg-white m-4  overflow-hidden  font-body p-1 w-full md:w-1/3 lg:w-1/4 xl:w-1/4 hover:underline hover:opacity-90 duration-200 ease-in-out cursor-pointer'>
         <Image
           src={"https:" + featuredImage.fields.file.url}
           width={featuredImage.fields.file.details.image.width}
           height={featuredImage.fields.file.details.image.height}
-          class='object-cover  '
+          className='object-cover  '
         />
-        <div class='p-6 text-center '>
-          <p class='font-semibold'>{title}</p>
+        <div className='p-6 text-center '>
+          <p className='font-semibold'>{title}</p>
         </div>
       </div>
     </Link>
