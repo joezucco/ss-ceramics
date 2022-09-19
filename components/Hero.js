@@ -6,7 +6,7 @@ export default function Hero({ hero }) {
   
   return (
   <>
-    <div >
+    <div>
       <section className='mx-auto container pt-10 -m min-h-screen'>
         <div className='flex flex-col sm:flex-col-reverse md:flex-row lg:flex-row'>
           <div className='flex flex-col lg:w-5/12 md:w-6/12 px-4 lg:pr-3 justify-center md:mb-0 lg:mb-24 md:pt-0 lg:pt-24'>

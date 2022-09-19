@@ -1,8 +1,8 @@
-import { FaInstagram, FaEtsy } from 'react-icons/fa'
+import { FaInstagram, FaEtsy } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className='bg-white dark:bg-gray-800 w-full py-8 '>
+    <footer className='bg-white dark:bg-gray-800 w-full py-8'>
       <div className='max-w-screen-xl mx-auto px-4 '>
         <ul className='max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-around'>
           <li className='my-2'>

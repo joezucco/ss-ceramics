@@ -21,7 +21,7 @@ module.exports = {
     fontFamily: {
       logo: ["Raleway"],
       body: ["Roboto"],
-    },
+    }
   },
 
   variants: {

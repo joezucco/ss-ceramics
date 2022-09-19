@@ -36,12 +36,12 @@ export default function Navigation({ toggle }) {
       <div className='pr-8  md:block normal-case hidden space-x-2'>
         <Link href='/products'>
           <a className='hover:text-gray-500 transition ease-in-out duration-200'>
-            Shop
+            work
           </a>
         </Link>
         <Link href='/contact'>
           <a className='hover:text-gray-500 transition ease-in-out duration-200'>
-            Contact
+            contact
           </a>
         </Link>
       </div>
