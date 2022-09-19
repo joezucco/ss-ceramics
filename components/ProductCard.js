@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProductCard({ product }) {
   
-  const { title, slug, featuredImage, price } = product.fields;
+  const { title, slug, featuredImage } = product.fields;
 
   return (
     <Link href={"/products/" + slug} class=''>
@@ -16,7 +16,6 @@ export default function ProductCard({ product }) {
         />
         <div class='p-6 text-center '>
           <p class='font-semibold'>{title}</p>
-          <p>${price}</p>
         </div>
       </div>
     </Link>

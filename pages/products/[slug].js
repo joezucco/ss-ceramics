@@ -64,10 +64,10 @@ export default function SingleProduct({ product }) {
           </div>
           <div class='m-2'>
             <h2 class='text-3xl mb-2'>{title}</h2>
-            <p class='text-2xl font-light mb-2'>${price}</p>
+            {/* <p class='text-2xl font-light mb-2'>${price}</p> */}
             <p class='mb-2'>{documentToReactComponents(description)}</p>
             <div>
-              {purchase && (
+              {/* {purchase && (
                 <button
                   class='bg-black hover:bg-gray-500  text-white py-2 px-4  transition ease-in duration-100 text-center text-base font-body shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded'
                   type='submit'
@@ -75,7 +75,7 @@ export default function SingleProduct({ product }) {
                 >
                   <a href={purchase}>Purchase</a>
                 </button>
-              )}
+              )} */}
             </div>
           </div>
         </div>
